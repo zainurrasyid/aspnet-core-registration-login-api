@@ -100,7 +100,7 @@ namespace WebApi.Controllers
         {
             var user =  _userService.GetById(id);
             var userDto = _mapper.Map<UserDto>(user);
-            return Ok(userDto);
+//             return Ok(userDto);
         }
 
         [HttpPut("{id}")]
