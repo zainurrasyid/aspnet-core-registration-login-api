@@ -57,7 +57,7 @@ namespace WebApi.Controllers
             var token = tokenHandler.CreateToken(tokenDescriptor);
             var tokenString = tokenHandler.WriteToken(token);
 
-            // return basic user info (without password) and token to store client side
+            return basic user info (without password) and token to store client side
             return Ok(new {
                 Id = user.Id,
                 Username = user.Username,
